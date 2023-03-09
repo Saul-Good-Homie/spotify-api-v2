@@ -61,6 +61,7 @@ body {
 .container {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100%;
 }
@@ -115,3 +116,25 @@ body {
 }
 
 img { background: transparent; }
+
+
+/* Custom css */
+.content-container{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.playlists {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  padding: 2em;
+}
+
+.podcasts{
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  padding: 2em;
+}

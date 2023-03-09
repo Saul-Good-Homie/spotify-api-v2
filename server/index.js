@@ -2,7 +2,7 @@ const express = require('express')
 const request = require('request');
 const dotenv = require('dotenv');
 
-const port = 4000
+const port = 8888
 
 global.access_token = ''
 
@@ -27,7 +27,7 @@ var app = express();
 
 app.get('/auth/login', (req, res) => {
 
-  var scope = "streaming user-read-email user-read-private"
+  var scope = "streaming user-read-email user-read-private user-read-currently-playing user-read-playback-state playlist-read-private user-library-read"
   var state = generateRandomString(16);
 
   var auth_query_parameters = new URLSearchParams({
