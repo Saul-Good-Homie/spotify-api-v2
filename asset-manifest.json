@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/spotify-api-v2/static/css/main.db925ebb.chunk.css",
+    "main.js": "/spotify-api-v2/static/js/main.3d031085.chunk.js",
+    "main.js.map": "/spotify-api-v2/static/js/main.3d031085.chunk.js.map",
+    "runtime-main.js": "/spotify-api-v2/static/js/runtime-main.4618393a.js",
+    "runtime-main.js.map": "/spotify-api-v2/static/js/runtime-main.4618393a.js.map",
+    "static/js/2.8e4c1e02.chunk.js": "/spotify-api-v2/static/js/2.8e4c1e02.chunk.js",
+    "static/js/2.8e4c1e02.chunk.js.map": "/spotify-api-v2/static/js/2.8e4c1e02.chunk.js.map",
+    "index.html": "/spotify-api-v2/index.html",
+    "static/css/main.db925ebb.chunk.css.map": "/spotify-api-v2/static/css/main.db925ebb.chunk.css.map",
+    "static/js/2.8e4c1e02.chunk.js.LICENSE.txt": "/spotify-api-v2/static/js/2.8e4c1e02.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4618393a.js",
+    "static/js/2.8e4c1e02.chunk.js",
+    "static/css/main.db925ebb.chunk.css",
+    "static/js/main.3d031085.chunk.js"
+  ]
+}
