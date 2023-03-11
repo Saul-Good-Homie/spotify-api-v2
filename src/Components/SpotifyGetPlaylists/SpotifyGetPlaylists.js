@@ -47,14 +47,26 @@ const SpotifyGetPlaylists = () => {
             },function(err) {
               console.log('Something went wrong!', err);
             });
+
         }
 
 
+        const startPlaylist = (playlistID) => {
+          // console.log(playlistID)
+          spotifyApi.play({context_uri: `spotify:playlist:${playlistID}`})
+          .then(() => {
+            console.log('Playback started');
+          })
+          .catch(err => {
+            console.log('Something went wrong!', err);
+          });
+        }
+
   return (
-    <>
+    <div>
       <button onClick={handleGetPlaylists}>Get Playlists</button>
-      {playlists?.items ? playlists.items.map((item) => <PlaylistButton title={item.name} id={item.id} key={item.id} ></PlaylistButton>) : null}
-    </>
+      {playlists?.items ? playlists.items.map((item) => <PlaylistButton title={item.name} id={item.id} key={item.id} onClick={() => startPlaylist(item.id)}></PlaylistButton>) : null}
+    </div>
   );
 };
 

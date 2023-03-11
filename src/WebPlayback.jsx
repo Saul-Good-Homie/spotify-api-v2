@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SpotifyGetPlaylists from './Components/SpotifyGetPlaylists/SpotifyGetPlaylists';
 import SpotifyGetPodcasts from './Components/SpotifyGetPodcasts/SpotifyGetPodcasts';
+import Playback from './Components/Playback/Playback';
 
 const track = {
     name: "",
@@ -107,6 +108,10 @@ function WebPlayback(props) {
                     </div>
                     <div className="podcasts">
                         <SpotifyGetPodcasts />
+                    </div>
+
+                    <div className="podcasts">
+                        <Playback />
                     </div>
 
                     </div>

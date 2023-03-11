@@ -20,7 +20,7 @@ const PlaylistButton = (data) => {
 
     return (
     <>
-      <button className="content-button" id={data.id} onClick={data.handleClick}>{data.title}</button>
+      <button className="content-button" id={data.id} onClick={data.onClick}>{data.title}</button>
     </>
   );
 };
