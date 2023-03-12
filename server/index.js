@@ -3,7 +3,6 @@ const request = require('request');
 const dotenv = require('dotenv');
 
 const port = 8888
-app.use(express.static(path.join(__dirname, '../build')));
 
 global.access_token = ''
 
@@ -12,7 +11,7 @@ dotenv.config()
 var spotify_client_id = process.env.SPOTIFY_CLIENT_ID
 var spotify_client_secret = process.env.SPOTIFY_CLIENT_SECRET
 
-var spotify_redirect_uri = 'https://saul-good-homie.github.io/spotify-api-v2/auth/callback'
+var spotify_redirect_uri = 'https://spotify-api-v2-4ug94d8u9-saul-good-homie.vercel.app/auth/callback'
 
 var generateRandomString = function (length) {
   var text = '';
